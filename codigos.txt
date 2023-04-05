@@ -75,4 +75,12 @@ function somaDoisNumeros() {
             mostrar(`O IMC calculado é ${imc}`)
         }
         calcularImc(116, 1.80);
-        
+
+***IMC 
+var peso = 75;
+var altura = 1.71;
+var imc = peso / ( altura * altura );
+
+document.write(imc)
+
+------------------------------------
