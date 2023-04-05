@@ -8,7 +8,7 @@ function mostra(frase) {
 }
 
 function somarDoisNumeros(numero1, numero2) {
-    mostra("A soma dos dois números é : " + (numero1 + numero2) );
+    mostra(`A soma de dois números é: ${numero1 + numero2}`);
 }
 
 somarDoisNumeros(60, 40);
