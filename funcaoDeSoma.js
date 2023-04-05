@@ -26,3 +26,5 @@ function tresNumeros (a, b, c){
     console.log(a * b * c)
 }
 tresNumeros(10, 10, 3)
+//--------------------------------------------------------------
+
