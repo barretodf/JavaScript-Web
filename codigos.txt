@@ -1,0 +1,78 @@
+
+***abre uma caixinha de texto
+alert('isso é um programa JS e HTML')
+Prompt ("Digite seu nome: ")//é uma caixinha de texto com pergunta
+
+-----------------------------------------------------------------------------------------------
+***Criando funções
+
+function pulaLinha(){
+
+            document.write('<br><br>');
+        }
+
+pulaLinha()
+
+//Sempre que eu escrever pulaLinha(), ele vai executar essa função e vai pular duas linhas
+
+---------------------------------------------------                            
+                                        
+function mostrar(frase){
+
+            document.write(frase)
+        }
+
+mostrar ('Olá pessoal')
+pulaLinha()
+mostrar('isso é uma função')
+pulaLinha()
+mostrar('JavaScript' + "<br>")
+
+//sempre que eu escrever mostrar, ele vai executar a função e mostrar o texto que eu pedi.
+
+-------------------------------------------------------------------------------------------------
+
+***Uma função pode ter como instrução a chamada de outra função!
+
+function mostrar(frase){
+
+            document.write(frase)
+            pulaLinha()
+        }
+
+mostrar ('Olá pessoal')
+
+------------------------------------------------------------------------------------------------
+
+***para treinar 
+
+function somaDoisNumeros() {
+
+        document.write(10 + 20);
+        //document.write(10 - 5);
+        //document.write(10 * 20);
+        //document.write(10 / 2);
+    }
+
+-----------------------------------------------------------------------------------------------
+
+ function pulaLinha() {
+    document.write("<br>");
+  }
+ pulaLinha()//ativar a função
+ -----------------------------------
+  function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+  var idadeMediaQuandoTemFilhos = 28;
+  var anoAtual = 2016;
+  var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+  mostra(quantidadeDeGeracoes);
+  ---------------------------------
+  function calcularImc(peso, altura){
+            let imc = (peso / (altura * altura));
+            mostrar(`O IMC calculado é ${imc}`)
+        }
+        calcularImc(116, 1.80);
+        
