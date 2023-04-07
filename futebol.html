@@ -17,12 +17,27 @@
             pularLinha()
         }
         //Para transformar string em número usa-se parseInt()
-        var vitorias = parseInt (prompt("Entre com o número de vitórias."))
-        var empates = parseInt (prompt("Entre com o número de empates."))
+        var vitorias = parseInt (prompt("Entre com o número de vitórias."));
+        
+        var empates  = parseInt (prompt("Entre com o número de empates."));
 
-        var pontos = vitorias * 3 + empates;
+        var pontos   = (vitorias * 3) + empates;
+        
+        mostrar(`Os pontos do seu time: ${pontos}`);
+        
+        if (pontos > 28){
+            mostrar("seu time está melhor que o ano passado");
+        }
+        if (pontos < 28) {
+            mostrar("seu time está pior que o ano passado");
+        }
+        if (pontos == 28) {
+            mostrar("seu time está igual o ano passado");
+        }
+        mostrar("FIM!");
+       
+        
 
-        mostrar (`Os pontos do seu time é ${pontos}`)
     </script>
 </body>
 </html>
