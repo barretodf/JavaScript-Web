@@ -13,30 +13,42 @@
     <h1>Teste</h1>
 
     <script>
-        function pularLinha() {
+        function pulaLinha() {
             document.write("<br>");
         }
 
-        function mostrar(frase) {
+        function mostra(frase) {
             document.write(frase);
         }
 
-        //var anoCopa = 1930;    
+    //     var anoCopa = 1930;    
+    
+    //     //While repete enquanto (true ou false)
+    // while (anoCopa <= 2023) {
+    //         mostrar(`Teve copa em: ${anoCopa}`);
+    //         pularLinha();
+    //         anoCopa = anoCopa + 4;
+    //     }
+    //     mostrar("Fim!")
+    function pulaLinha() {
+        document.write("<br>");
+    }
 
-        //While repete enquanto (true ou false)
-        // while (anoCopa <= 2023) {
-        //         mostrar(`Teve copa em: ${anoCopa}`);
-        //         pularLinha();
-        //         anoCopa = anoCopa + 4;
-        //     }
-        //     mostrar("Fim!")
-        var contador = 2;
-        while (contador <= 100) {
-            mostrar(contador);
-            pularLinha();
-            contador = contador + 2; // incrementa de dois em dois
-        }
-        mostra("FIM");
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 20;
+
+    while( contador >= 0) {
+
+      mostra(contador);
+      contador = contador - 1;
+    }
+
+    mostra("FIM");
+
 
     </script>
 </body>
