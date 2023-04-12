@@ -21,47 +21,23 @@
             document.write(frase);
         }
 
-    //     var anoCopa = 1930;    
-    
-    //     //While repete enquanto (true ou false)
-    // while (anoCopa <= 2023) {
-    //         mostrar(`Teve copa em: ${anoCopa}`);
-    //         pularLinha();
-    //         anoCopa = anoCopa + 4;
-    //     }
-    //     mostrar("Fim!")
-    
-    
-    var loginCadastrado = "alura";
-    var senhaCadastrada = "alura321";
+        //     var anoCopa = 1930;    
 
-    var maximoTentativas = 3;
-    var tentativaAtual = 1;
+        //     //While repete enquanto (true ou false)
+        // while (anoCopa <= 2023) {
+        //         mostrar(`Teve copa em: ${anoCopa}`);
+        //         pularLinha();
+        //         anoCopa = anoCopa + 4;
+        //     }
+        //     mostrar("Fim!")
 
-    while(tentativaAtual <= maximoTentativas) {
+        var idade = parseInt(prompt("Digite sua idade"));
 
-        var loginInformado = prompt("Informe seu login");
-        var senhaInformada = prompt("Informe sua senha");
-
-        if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
-
-            alert("Bem-vindo ao sistema, " + loginInformado);
-
-            tentativaAtual = maximoTentativas; // acertou, então faço o gasto de todas as tentativas para sair do loop. Lá embaixo vai incrementar + 1! 
-
-        } else {
-
-            if (tentativaAtual == 3) {
-                alert("Número permitido de tentativas ultrapassado!");
-            } else {
-                alert("Login inválido. Tente novamente");
-            }
+        while (isNaN(idade)) {
+            idade = parseInt(prompt("Digite sua idade"));
         }
 
-       // vai para a próxima tentativa
-        tentativaAtual = tentativaAtual +1  
-    }
-
+        alert(idade);
     </script>
 </body>
 
