@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Teste</h1>
+
+    <script>
+        function pularLinha() {
+            document.write("<br>");
+        }
+
+        function mostrar(frase) {
+            document.write(frase);
+        }
+
+        var anoCopa = 1930;    
+    
+        //While repete enquanto (true ou false)
+    while (anoCopa <= 2023) {
+            mostrar(`Teve copa em: ${anoCopa}`);
+            pularLinha();
+            anoCopa = anoCopa + 4;
+        }
+        mostrar("Fim!")
+
+
+    </script>
+</body>
+
+</html>
