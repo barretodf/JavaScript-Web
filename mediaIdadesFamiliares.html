@@ -18,22 +18,34 @@
         function mostra(frase) {
             document.write(frase);
         }
-
+        //Pergunta o total de familiares e salva na variável
         var totalFamiliares = parseInt(prompt("Quantas pessoas na família?"));
 
+        //Supondo que o total de familiares seja 3, e que já temos uma leitura, teremos var numero = 1
+        //Enquanto 1 for igual ou menor a 3, será feita a pergunta.
         var numero = 1;
+        
+        //Informa quantas vezes foi perguntado o a idade do familiar
         var totalIdades = 0;
-
+        
+        //Enquanto numero for menor ou igual ao totalFamiliares, 
+        //o prompt() "Informe idade do familiar" será executado:
         while (numero <= totalFamiliares) {
             var idade = parseInt(prompt("Informe a idade: do familiar"));
             totalIdades = totalIdades + idade;
-            numero++;
+            numero++;//Temos que incrementar 1 numero para que, ao ultrapassar 3, parem de ser feitas perguntas
         }
 
+        //Em seguida, criaremos a variável mediaDasIdades, que recebe o totalIdades dividido pela 
+        //quantidade de familiares, ou seja, totalFamiliares:
         var mediaDasIdades = totalIdades / totalFamiliares;
+        
+        //Ao final, imprimiremos uma mensagem "A média das 
+        //idades dos familiares é", concatenada à mediaDasIdades:
         mostra(`A média das idades dos familiares é: ${mediaDasIdades}`);
         pulaLinha();
         mostra("The End!");
+        
 
     </script>
 </body>
